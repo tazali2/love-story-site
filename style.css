@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  width: 500vw;
+  animation: slide 25s infinite;
+}
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fdf6ff;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  margin-top: 10px;
+}
+
+/* Ping pong animation */
+.pingpong {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background: #4caf50;
+}
+
+.paddle {
+  width: 10px;
+  height: 40px;
+  background: black;
+  position: absolute;
+  top: 30px;
+}
+
+.left { left: 0; }
+.right { right: 0; }
+
+.ball {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+  from { left: 10px; }
+  to { left: 280px; }
+}
+
+/* Cards animation */
+.cards {
+  font-size: 2rem;
+  animation: pop 1s infinite alternate;
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+/* Music floating */
+.music {
+  font-size: 2rem;
+  animation: float 2s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* Hearts */
+.hearts {
+  font-size: 2rem;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.3); }
+}
+
+/* Slide scenes */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-100vw); }
+  40% { transform: translateX(-200vw); }
+  60% { transform: translateX(-300vw); }
+  80% { transform: translateX(-400vw); }
+  100% { transform: translateX(0); }
+}
