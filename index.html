@@ -7,46 +7,51 @@
 </head>
 <body>
 
-<div class="container">
+<div id="app">
 
-  <!-- Scene 1: Ping Pong -->
-  <section class="scene">
-    <h1>🏓 Us Playing Ping Pong</h1>
+  <!-- Scene container -->
+  <div class="scene active" id="scene0">
+    <h1>🏓 Ping Pong</h1>
     <div class="pingpong">
       <div class="paddle left"></div>
       <div class="paddle right"></div>
       <div class="ball"></div>
     </div>
     <p>We get way too competitive 😭</p>
-  </section>
+  </div>
 
-  <!-- Scene 2: UNO -->
-  <section class="scene">
-    <h1>🃏 UNO Nights</h1>
+  <div class="scene" id="scene1">
+    <h1>🃏 UNO</h1>
     <div class="cards">🟥 🟦 🟩 🟨</div>
     <p>+4 is personal 😤</p>
-  </section>
+  </div>
 
-  <!-- Scene 3: Car -->
-  <section class="scene">
+  <div class="scene" id="scene2">
     <h1>🚗 Car Concerts</h1>
     <div class="music">🎵 🎶 🎵</div>
     <p>We sing like we’re famous</p>
-  </section>
+  </div>
 
-  <!-- Scene 4: Karaoke -->
-  <section class="scene">
+  <div class="scene" id="scene3">
     <h1>🎤 Karaoke</h1>
     <div class="mic">🎤</div>
     <p>Main character energy</p>
-  </section>
+  </div>
 
-  <!-- Scene 5: Dinner -->
-  <section class="scene">
-    <h1>🍽️ Dinner Dates</h1>
+  <div class="scene" id="scene4">
+    <h1>🍽️ Dinner</h1>
     <div class="hearts">❤️ ❤️ ❤️</div>
     <p>My favorite person ❤️</p>
-  </section>
+  </div>
+
+  <!-- Final message -->
+  <div class="scene" id="scene5">
+    <h1>💌</h1>
+    <p class="big">I love doing life with you ❤️</p>
+  </div>
+
+  <!-- Button -->
+  <button id="nextBtn">Next ➡️</button>
 
 </div>
 
