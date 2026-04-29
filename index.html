@@ -9,48 +9,69 @@
 
 <div id="app">
 
-  <!-- Scene container -->
-  <div class="scene active" id="scene0">
+  <!-- Scene 1 -->
+  <div class="scene active">
     <h1>🏓 Ping Pong</h1>
+
+    <div class="characters">
+      <div class="girl">
+        <div class="hair wavy"></div>
+        <div class="face brown"></div>
+        <div class="outfit girl-outfit"></div>
+      </div>
+
+      <div class="boy">
+        <div class="hair curly"></div>
+        <div class="face brown"></div>
+        <div class="outfit boy-outfit"></div>
+      </div>
+    </div>
+
+    <div class="speech left">You're losing 😭</div>
+    <div class="speech right">Watch me win 😤</div>
+
     <div class="pingpong">
-      <div class="paddle left"></div>
-      <div class="paddle right"></div>
       <div class="ball"></div>
     </div>
-    <p>We get way too competitive 😭</p>
   </div>
 
-  <div class="scene" id="scene1">
+  <!-- Scene 2 -->
+  <div class="scene">
     <h1>🃏 UNO</h1>
     <div class="cards">🟥 🟦 🟩 🟨</div>
-    <p>+4 is personal 😤</p>
+    <div class="speech center">+4 AGAIN?? 😭</div>
   </div>
 
-  <div class="scene" id="scene2">
+  <!-- Scene 3 -->
+  <div class="scene">
     <h1>🚗 Car Concerts</h1>
     <div class="music">🎵 🎶 🎵</div>
-    <p>We sing like we’re famous</p>
+    <div class="speech center">WE ATE THAT SONG </div>
   </div>
 
-  <div class="scene" id="scene3">
+  <!-- Scene 4 -->
+  <div class="scene">
     <h1>🎤 Karaoke</h1>
     <div class="mic">🎤</div>
-    <p>Main character energy</p>
+    <div class="speech center">concert vibes</div>
   </div>
 
-  <div class="scene" id="scene4">
+  <!-- Scene 5 -->
+  <div class="scene">
     <h1>🍽️ Dinner</h1>
     <div class="hearts">❤️ ❤️ ❤️</div>
-    <p>My favorite person ❤️</p>
+    <div class="speech center">my favorite person ❤️</div>
   </div>
 
-  <!-- Final message -->
-  <div class="scene" id="scene5">
-    <h1>💌</h1>
-    <p class="big">I love doing life with you ❤️</p>
+  <!-- Final popup -->
+  <div id="popup" class="hidden">
+    <div class="popup-box">
+      <h2>💌 Surprise</h2>
+      <p>I love doing life with you ,thank you for making all these memories khai ❤️</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
   </div>
 
-  <!-- Button -->
   <button id="nextBtn">Next ➡️</button>
 
 </div>
